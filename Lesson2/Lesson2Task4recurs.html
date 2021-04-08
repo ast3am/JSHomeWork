@@ -1,0 +1,14 @@
+<script>
+    var a = Math.round(Math.random() * 15 + 0);
+
+    function printNumber(n) {
+        if (n == 15) {
+            return;
+        }
+        console.log(n);
+        return printNumber(n + 1);
+    }
+
+    printNumber(a);
+
+</script>

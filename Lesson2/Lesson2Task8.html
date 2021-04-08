@@ -1,0 +1,13 @@
+<script>
+    function pow(a, n) {
+        if (n == 1) {
+            return a;
+        } else {
+            a = a * pow(a, n - 1);
+            return a;
+        }
+    }
+
+    alert("Результат равен: " + pow(3, 3));
+
+</script>

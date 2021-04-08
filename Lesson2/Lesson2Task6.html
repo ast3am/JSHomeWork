@@ -1,0 +1,44 @@
+<script>
+    var a = 5
+    var b = 7
+
+    function sum(a, b) { //сложение
+        n = a + b;
+        return n;
+    }
+
+    function sub(a, b) { //вычитание
+        n = a - b;
+        return n;
+    }
+
+    function split(a, b) { //деление
+        n = a / b;
+        return n.toFixed(2);
+    }
+
+    function mult(a, b) { //умножение
+        n = a * b;
+        return n;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case "sum":
+                alert("Cумма равна: " + sum(arg1, arg2));
+                return;
+            case "sub":
+                alert("Разность равна: " + sub(arg1, arg2));
+                return;
+            case "split":
+                alert("Итог деления: " + split(arg1, arg2));
+                return;
+            case "mult":
+                alert("Произведение равно: " + mult(arg1, arg2));
+                return;
+        }
+    }
+
+    mathOperation(5, 15, "sum");
+
+</script>
