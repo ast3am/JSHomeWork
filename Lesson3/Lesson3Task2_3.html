@@ -1,0 +1,30 @@
+<script>
+    function sumPrice(array) {
+        var sum = 0
+        for (var item of array) {
+            sum += (item.price * item.count);
+        }
+        alert("Сумма ваших покупок: " + sum + " рублей");
+
+    }
+    var basket = [{
+            title: "Товар 1",
+            price: 100,
+            count: 6
+        },
+        {
+            title: "Товар 2",
+            price: 200,
+            count: 3
+        },
+        {
+            title: "Товар 3",
+            price: 300,
+            count: 1
+        }
+    ];
+
+
+  sumPrice(basket);
+
+</script>
