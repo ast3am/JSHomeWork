@@ -1,0 +1,28 @@
+<script>
+    function Number(value) {
+        this.value = value;
+        this.hundreds = function() {
+            return (Math.floor(this.value / 100));
+        }
+
+        this.dozens = function() {
+            return (Math.floor((this.value - this.hundreds() * 100) / 10));
+        }
+        this.units = function() {
+            return (this.value - this.hundreds() * 100 - this.dozens() * 10);
+        }
+    }
+
+    function Alert(array) {
+        if (array.value > 999 || array.value < 0 ) {
+            alert("Вы ввели не верное значение");
+        } else {
+            alert("Было введено число " + number1.value + "\nКоличество сотен: " + number1.hundreds() + "\nКоличество десятков: " + number1.dozens() + "\nКоличество единиц: " + number1.units());
+        }
+    }
+
+    var number1 = new Number(+prompt("Введите число от 0 до 999"));
+    Alert(number1);
+
+
+</script>
