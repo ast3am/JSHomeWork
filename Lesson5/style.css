@@ -1,0 +1,33 @@
+table {
+    background-color: #dfb994;
+    border-collapse: collapse;
+    border: solid 1px black;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.first,
+.lastSt {
+    transform: rotate(180deg);
+}
+
+.whiteSquare {
+    background-color: #e0be98;
+    outline: black 1px solid;
+    font-size: 30px;
+
+
+}
+
+.blackSquare {
+    background-color: #b6603f;
+     outline: black 1px solid;
+      font-size: 30px;
+}
+
+
