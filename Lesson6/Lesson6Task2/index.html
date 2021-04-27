@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="img">
+            <img id="img" src="img/2.png" alt="error3">
+        </div>
+        <button id="left" onclick="next(this.id)">Предыдущее изображение</button>
+        <button id="right" onclick="next(this.id)">Следующее изображение</button>
+    </div>
+    <script>
+        var imgNumber = 2;
+
+        function next(id) {
+            if (id == "right") {
+                var Img = document.getElementById("Img");
+                if (imgNumber == 3) { //в идеале пересчитать количество файлов в папке и задать переменную, но не нашел варианта как это сделать
+                    imgNumber = 1;
+                    img.src = "img/" + (imgNumber) + ".png";
+                } else {
+                    img.src = "img/" + (++imgNumber) + ".png";
+                }
+            } else {
+                if (imgNumber == 1) {
+                    imgNumber = 3;
+                    img.src = "img/" + (imgNumber) + ".png";
+                } else {
+                    var Img = document.getElementById("Img");
+                    img.src = "img/" + (--imgNumber) + ".png";
+                }
+            }
+        };
+    </script>
+</body></html>
